@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>My Bootstrap Page</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/general.css">
+      <script src="js/script.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 custom-navbar">
+         <div class="container">
+            <a class="navbar-brand" href="#home">
+            <img src="odoo-white.svg" alt="Odoo" class="footer-logo">
+            </a>
+            <!-- MOB -->
+            <button class="navbar-toggler"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+               <!-- CENTER MENU -->
+               <ul class="navbar-nav mx-auto gap-lg-4">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#features">Products</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#technology">Pages</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#awards">App</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#faq">Docs</a>
+                  </li>
+               </ul>
+               <!-- RIGHT SIDE -->
+               <ul class="navbar-nav align-items-lg-center gap-lg-3">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Sign in</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="btn btn-light btn-sm px-3 d-flex align-items-center gap-2" href="#">
+                     <i class="bi bi-bag"></i>
+                     Buy now
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section id="home" class="hero-section text-white position-relative overflow-hidden">
+         <div class="container py-5">
+            <div class="row align-items-center g-5">
+               <!-- LEFT CONTENT -->
+               <div class="col-lg-6">
+                  <h1 class="display-5 mb-4">
+                     Development <br class="desk"> done right
+                  </h1>
+                  <p class="lead mb-4 text-white-75">
+                     Build a beautiful, modern website with<br class="desk"> flexible components built from scratch.
+                  </p>
+                  <div class="text-center text-lg-start">
+                     <a href="#features" class="btn btn-light px-4 py-3">
+                     Get started +
+                     </a>
+                  </div>
+                  <div class="mt-5 trusted-logos">
+                     <small class="text-white-50 d-block mb-3">
+                     Trusted by:
+                     </small>
+                     <div class="brand-logos d-flex flex-wrap gap-4">
+                        <img src="icons/google-white.svg" alt="Google" class="brand-logo">
+                        <img src="icons/spotify.svg" alt="Spotify" class="brand-logo">
+                        <img src="icons/airbnb.svg" alt="Airbnb" class="brand-logo">
+                        <img src="icons/paypal.svg" alt="PayPal" class="brand-logo">
+                     </div>
+                  </div>
+               </div>
+               <!-- RIGHT CONTENT -->
+               <div class="col-lg-6">
+                  <div class="product-module bg-white text-dark rounded-5 shadow-lg p-4">
+                     <div class="card-manager rounded-5 shadow-lg bg-white p-4">
+                        <!-- HEADER -->
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                           <h6 class="fw-semibold mb-0">Manage cards</h6>
+                           <button class="btn btn-sm btn-outline-secondary">
+                           Add new
+                           </button>
+                        </div>
+                        <!-- CARD -->
+                        <div class="bank-card text-white p-4 rounded-4 mb-4 position-relative">
+                           <div class="d-flex justify-content-between align-items-start mb-4">
+                              <div class="d-flex align-items-center gap-2">
+                                 <div class="mc-circle bg-danger"></div>
+                                 <div class="mc-circle bg-warning"></div>
+                              </div>
+                              <span class="badge bg-success-subtle text-success">
+                              Active
+                              </span>
+                           </div>
+                           <small class="text-uppercase text-white-50">Card number</small>
+                           <div class="fs-5 fw-semibold mb-4">
+                              4358 - 7421 - 9256 - 6682
+                           </div>
+                           <div class="d-flex justify-content-between">
+                              <div>
+                                 <small class="text-white-50 text-uppercase">Name</small>
+                                 <div>John Snow</div>
+                              </div>
+                              <div>
+                                 <small class="text-white-50 text-uppercase">Expiry date</small>
+                                 <div>11/23</div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- TRANSACTIONS -->
+                        <div class="transaction py-3 border-top">
+                           <div class="d-flex justify-content-between">
+                              <div>
+                                 <strong>Starbucks</strong>
+                                 <div class="text-muted small">
+                                    Pending - San Francisco, United States
+                                 </div>
+                              </div>
+                              <div>$5.50 USD</div>
+                           </div>
+                        </div>
+                        <div class="transaction py-3 border-top">
+                           <div class="d-flex justify-content-between">
+                              <div>
+                                 <strong>Nike Sports</strong>
+                                 <div class="text-muted small">
+                                    Pending - Lisbon, Portugal
+                                 </div>
+                              </div>
+                              <div>$129.00 USD</div>
+                           </div>
+                        </div>
+                        <div class="mt-3">
+                           <a href="#" class="small text-decoration-none">
+                           View all →
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="hero-angle"></div>
+      </section>
+      <section class="py-5 bg-light">
+         <div class="container">
+            <div class="row align-items-center g-3 g-lg-5">
+               <!-- LEFT COLUMN -->
+               <div class="col-lg-6 order-2 order-lg-1">
+                  <div class="position-relative">
+                     <!-- MOB IMG  -->
+                     <div class="d-lg-none mb-4">
+                        <video class="w-100 rounded-4 shadow mobile-video" controls>
+                           <source src="video/img_01.mp4" type="video/mp4">
+                        </video>
+                     </div>
+                     <!-- MAIN CARD -->
+                     <div class="card border-0 shadow-sm p-5 rounded-4">
+                        <h5 class="fw-bold mb-4">Awesome projects</h5>
+                        <div class="mb-4 video-item" data-time="0">
+                           <div class="d-flex justify-content-between">
+                              <span>Create the new logo</span>
+                           </div>
+                           <div class="progress" style="">
+                              <div class="progress-bar bg-warning" style="width:10%"></div>
+                           </div>
+                           <small class="text-muted d-block mt-2">0:01</small>
+                        </div>
+                        <div class="mb-4 video-item" data-time="5">
+                           <span>Set up the color palette</span>
+                           <div class="progress">
+                              <div class="progress-bar bg-warning" style="width:50%"></div>
+                           </div>
+                           <small class="text-muted d-block mt-2">0:05</small>
+                        </div>
+                        <div class="video-item" data-time="8">
+                           <div>
+                              <span>Wireframe and prototype</span>
+                           </div>
+                           <div class="progress mt-2">
+                              <div class="progress-bar bg-warning" style="width:80%"></div>
+                           </div>
+                           <small class="text-muted d-block mt-2">0:08</small>
+                        </div>
+                     </div>
+                     <!-- DESK IMG -->
+                     <div class="card border-0 shadow position-absolute top-0 start-50 rounded-4 d-none d-lg-block video-layer">
+                        <video id="projectVideo" class="w-100" controls>
+                           <source src="video/img_01.mp4" type="video/mp4">
+                        </video>
+                     </div>
+                     <!-- PLAY BUTTON -->
+                     <button id="playBtnDesktop" class="btn btn-light btn-sm position-absolute top-0 end-0 m-3 d-none d-lg-block video-play-btn">
+                     ▶ Play video
+                     </button>
+                  </div>
+               </div>
+               <!-- RIGHT COLUMN -->
+               <div class="col-lg-6 order-1 order-lg-2">
+                  <span class="badge badge-tools mb-3">Tools</span>
+                  <h2 class="mb-3">
+                     We build for designers and developers
+                  </h2>
+                  <p class="text-muted">
+                     Get components and examples, including tons of<br class="desk"> variables that will help you grow your business.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="features" class="py-0 py-lg-5 bg-light">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <!-- LEFT TEXT COLUMN -->
+               <div class="col-lg-6">
+                  <span class="badge badge-features mb-3">Features</span>
+                  <h3 class="fw-semibold mb-4">
+                     Get components and examples, including tons of variables that will help you grow your business.
+                  </h3>
+                  <div class="d-flex align-items-start mb-3">
+                     <div class="me-3 text-success">
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                     </div>
+                     <div class="text-success-content">Perfect for modern startups</div>
+                  </div>
+                  <div class="d-flex align-items-start">
+                     <div class="me-3 text-success">
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                     </div>
+                     <div class="text-success-content">Fully customizable and scalable</div>
+                  </div>
+               </div>
+               <!-- RIGHT VIDEO COLUMN -->
+               <div class="col-lg-6">
+                  <div class="position-relative">
+                     <!-- MOB VIDEO -->
+                     <div class="d-lg-none mb-3">
+                        <video class="w-100 rounded-4 shadow mobile-video" controls>
+                           <source src="video/img_01_1.mp4" type="video/mp4">
+                        </video>
+                        <button id="playBtnMobile"
+                           class="btn btn-light btn-sm position-absolute top-0 start-0 m-3 d-lg-none video-play-btn">
+                        ▶ Play video
+                        </button>
+                     </div>
+                     <!-- DESK VIDEO -->
+                     <div class="card border-0 shadow rounded-4 overflow-hidden d-none d-lg-block">
+                        <video class="w-100 desktop-video-2" controls>
+                           <source src="video/img_01_1.mp4" type="video/mp4">
+                        </video>
+                     </div>
+                     <button id="playBtnDesktop2"
+                        class="btn btn-light btn-sm position-absolute top-0 start-0 m-3 d-none d-lg-block video-play-btn">
+                     ▶ Play video
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="technology" class="py-0 py-lg-5 bg-light">
+         <div class="container">
+            <div class="row align-items-center g-3 g-lg-5">
+               <!-- LEFT CARD CLUSTER -->
+               <div class="col-lg-6 order-2 order-lg-1">
+                  <!-- TOP PROFILE CARD -->
+                  <div class="row g-4 mb-4">
+                     <div class="col-12 card-offset">
+                        <div class="card border-0 shadow-sm rounded-4 profile-card ">
+                           <img src="img/person_03.jpg" class="card-img-top rounded-top-4" alt="">
+                           <div class="card-body d-flex justify-content-between align-items-center">
+                              <div>
+                                 <span class="badge bg-warning text-dark rounded-circle me-2">JH</span>
+                                 <span class="fw-semibold">Jimmy Hendrix</span>
+                              </div>
+                              <i class="bi bi-heart"></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- GRID -->
+                  <div class="row g-4">
+                     <!-- 1 -->
+                     <div class="col-md-6">
+                        <div class="award-card card border-0 shadow-sm rounded-4 text-center p-4 h-100">
+                           <img src="icons/airbnb.svg" class="img-fluid mb-3" style="height:28px;" alt="Airbnb">
+                           <div class="text-warning mb-2">
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star-fill"></i>
+                              <i class="bi bi-star"></i>
+                           </div>
+                           <p class="fw-semibold mb-1">4.95 out of 5 stars</p>
+                           <small class="text-muted">from 23 reviews</small>
+                        </div>
+                     </div>
+                     <!-- 2 -->
+                     <div class="col-md-6">
+                        <div class="card border-0 shadow-sm rounded-4 text-center p-4 h-100 websiteui-card">
+                           <div class="bg-dark text-white rounded-circle mx-auto mb-3 feature-icon-circle">
+                              <i class="bi bi-infinity"></i>
+                           </div>
+                           <h6 class="fw-semibold mb-1">Website UI Kit</h6>
+                           <hr class="my-3">
+                           <div class="d-flex justify-content-center gap-4 text-muted">
+                              <i class="bi bi-paperclip"></i>
+                              <i class="bi bi-eye"></i>
+                              <i class="bi bi-heart"></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- RIGHT TEXT COLUMN -->
+               <div class="col-lg-6 order-1 order-lg-2 mt-lg-0">
+                  <span class="badge badge-technology mb-3">Technology</span>
+                  <h3 class="mb-4">
+                     We use the latest<br class="desk"> technologies on the market
+                  </h3>
+                  <p class="text-muted mb-4">
+                     Get components and examples, including tons of
+                     <br class="desk">variables that will help you grow your business.
+                  </p>
+                  <div class="card border-0 shadow-sm rounded-4 p-4 mb-4 feature-card-small components-card">
+                     <div class="d-flex align-items-center">
+                        <div class="bg-success bg-opacity-25 rounded-circle p-2 me-3">
+                           <i class="bi bi-check-lg text-success"></i>
+                        </div>
+                        <div>
+                           <p class="fw-semibold mb-0">300+ components</p>
+                           <small class="text-muted">Built to be customized.</small><br>
+                           <a href="#" class="fw-semibold">
+                           See case studies
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="py-5 bg-light">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <!-- LEFT TEXT -->
+               <div class="col-lg-6">
+                  <span class="badge badge-install mb-3">Easy to install</span>
+                  <h3 class="mb-4">
+                     Download, install and run
+                  </h3>
+                  <p class="text-muted mb-4">
+                     Get components and examples, including tons<br class="desk"> of variables that will help you grow your business.
+                  </p>
+                  <div class="d-flex gap-3 flex-wrap">
+                     <button class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2">
+                     <i class="bi bi-apple"></i>
+                     App Store
+                     </button>
+                     <button class="btn btn-dark d-flex align-items-center gap-2 px-4 py-2">
+                     <i class="bi bi-google-play"></i>
+                     Play Store
+                     </button>
+                  </div>
+               </div>
+               <!-- RIGHT VIDEO -->
+               <div class="col-lg-6">
+                  <div class="position-relative">
+                     <!-- MOB VIDEO -->
+                     <div class="d-lg-none mb-3">
+                        <video class="w-100 rounded-4 shadow mobile-video-3" controls>
+                           <source src="video/img_01_2.mp4" type="video/mp4">
+                        </video>
+                     </div>
+                     <!-- DESK VIDEO -->
+                     <div class="card border-0 shadow rounded-4 overflow-hidden d-none d-lg-block">
+                        <video class="w-100 desktop-video-3" controls>
+                           <source src="video/img_01_2.mp4" type="video/mp4">
+                        </video>
+                     </div>
+                     <button id="playBtnDesktop3"
+                        class="btn btn-light btn-sm position-absolute top-0 start-0 m-3 d-none d-lg-block video-play-btn">
+                     ▶ Play video
+                     </button>
+                     <button id="playBtnMobile"
+                        class="btn btn-light btn-sm position-absolute top-0 start-0 start-lg-auto end-lg-0 m-3 video-play-btn">
+                     ▶ Play video
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="py-0 py-lg-5">
+         <div class="container">
+            <div class="cta-block d-flex flex-column flex-lg-row 
+               align-items-start align-items-lg-center 
+               justify-content-between 
+               p-5">
+               <div class="mb-4 mb-lg-0">
+                  <h4 class="fw-semibold text-white mb-3">
+                     Infinite solutions
+                  </h4>
+                  <p class="text-white mb-0">
+                     Intuitive markup, powerful and lightning fast build tools,<br class="desk">everything you need to turn your ideas into incredible products.
+                  </p>
+               </div>
+               <button class="btn btn-light px-4 py-2">
+               Learn more →
+               </button>
+            </div>
+         </div>
+      </section>
+      <section id="awards" class="py-5 bg-light ">
+         <div class="container">
+            <span class="badge badge-awards mb-3">Awards</span>
+            <h4 class="fw-semibold mb-5">
+               Awards for design, creativity and innovation on the Internet
+            </h4>
+            <!-- CARDS -->
+            <div class="row justify-content-center g-4">
+               <!-- 1 -->
+               <div class="col-12 col-md-6 col-lg-2">
+                  <a href="https://airbnb.com" target="_blank"
+                     class="award-card card border-0 shadow-sm rounded-4 text-center p-4 h-100 text-decoration-none text-dark">
+                     <img src="icons/airbnb.svg" class="img-fluid mb-3" alt="Airbnb">
+                     <div class="text-warning mb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                     </div>
+                     <p class="fw-semibold mb-1">4.95 out of 5 stars</p>
+                     <small class="text-muted">from 23 reviews</small>
+                  </a>
+               </div>
+               <!-- 2 -->
+               <div class="col-12 col-md-6 col-lg-2">
+                  <a href="https://amazon.com" target="_blank"
+                     class="award-card card border-0 shadow-sm rounded-4 text-center p-4 h-100 text-decoration-none text-dark">
+                     <img src="icons/amazon.svg" class="img-fluid mb-3" alt="Amazon">
+                     <p class="text-muted mb-3">
+                        They build modern looking websites easily using Tabs.
+                     </p>
+                     <span class="fw-semibold">
+                     Learn more
+                     </span>
+                  </a>
+               </div>
+               <!-- 3 -->
+               <div class="col-12 col-md-6 col-lg-2">
+                  <a href="https://slack.com" target="_blank"
+                     class="award-card card border-0 shadow-sm rounded-4 text-center p-4 h-100 text-decoration-none text-dark">
+                     <img src="icons/slack.svg" class="img-fluid mb-3" alt="Slack">
+                     <p class="text-muted mb-3">
+                        They build modern looking websites easily using Trello.
+                     </p>
+                     <span class="fw-semibold">
+                     Learn more
+                     </span>
+                  </a>
+               </div>
+               <!-- 4 -->
+               <div class="col-12 col-md-6 col-lg-2">
+                  <a href="https://spotify.com" target="_blank"
+                     class="award-card card border-0 shadow-sm rounded-4 text-center p-4 h-100 text-decoration-none text-dark">
+                     <img src="icons/spotify.svg" class="img-fluid mb-3" alt="Spotify">
+                     <div class="text-warning mb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                     </div>
+                     <p class="fw-semibold mb-1">4.95 out of 5 stars</p>
+                     <small class="text-muted">from 23 reviews</small>
+                  </a>
+               </div>
+               <!-- 5 -->
+               <div class="col-12 col-md-6 col-lg-2">
+                  <a href="https://paypal.com" target="_blank"
+                     class="award-card card border-0 shadow-sm rounded-4 text-center p-4 h-100 text-decoration-none text-dark">
+                     <img src="icons/paypal.svg" class="img-fluid mb-3" alt="PayPal">
+                     <p class="text-muted mb-3">
+                        They build modern looking websites easily using Docker.
+                     </p>
+                     <span class="fw-semibold">
+                     Learn more
+                     </span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="faq" class="py-5 bg-light">
+         <div class="container">
+            <div class="text-center mb-5">
+               <h4 class="fw-semibold">Helpful answers</h4>
+               <p class="text-muted">
+                  Start building fast, beautiful and modern looking websites in no time.
+               </p>
+            </div>
+            <div class="row g-4">
+               <!-- LEFT COLUMN -->
+               <div class="col-lg-6">
+                  <div class="accordion" id="faqLeft">
+                     <div class="accordion-item border-0 shadow-sm rounded-4 mb-3">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button collapsed rounded-4"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#faq1">
+                           <span class="faq-title">
+                           <i class="bi bi-file-earmark-text"></i>
+                           Which license do I need?
+                           </span>
+                           </button>
+                        </h2>
+                        <div id="faq1"
+                           class="accordion-collapse collapse"
+                           data-bs-parent="#faqLeft">
+                           <div class="accordion-body text-muted">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Nulla facilisi. Integer posuere erat a ante venenatis
+                              dapibus posuere velit aliquet.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 shadow-sm rounded-4 mb-3">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button collapsed rounded-4"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#faq2">
+                           <span class="faq-title">
+                           <i class="bi bi-lock"></i>
+                           How do I get access to my database?
+                           </span>
+                           </button>
+                        </h2>
+                        <div id="faq2"
+                           class="accordion-collapse collapse"
+                           data-bs-parent="#faqLeft">
+                           <div class="accordion-body text-muted">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 shadow-sm rounded-4">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button collapsed rounded-4"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#faq3">
+                           <span class="faq-title">
+                           <i class="bi bi-folder"></i>
+                           How do I see previous orders?
+                           </span>
+                           </button>
+                        </h2>
+                        <div id="faq3"
+                           class="accordion-collapse collapse"
+                           data-bs-parent="#faqLeft">
+                           <div class="accordion-body text-muted">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- RIGHT COLUMN -->
+               <div class="col-lg-6">
+                  <div class="accordion" id="faqRight">
+                     <div class="accordion-item border-0 shadow-sm rounded-4 mb-3">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button collapsed rounded-4"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#faq4">
+                           <span class="faq-title">
+                           <i class="bi bi-file-earmark-text"></i>
+                           Which license do I need?
+                           </span>
+                           </button>
+                        </h2>
+                        <div id="faq4"
+                           class="accordion-collapse collapse"
+                           data-bs-parent="#faqRight">
+                           <div class="accordion-body text-muted">
+                              Lorem ipsum...
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 shadow-sm rounded-4 mb-3">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button collapsed rounded-4"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#faq5">
+                           <span class="faq-title">
+                           <i class="bi bi-lock"></i>
+                           How do I get access to my database?
+                           </span>
+                           </button>
+                        </h2>
+                        <div id="faq5"
+                           class="accordion-collapse collapse"
+                           data-bs-parent="#faqRight">
+                           <div class="accordion-body text-muted">
+                              Lorem ipsum...
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 shadow-sm rounded-4">
+                        <h2 class="accordion-header">
+                           <button class="accordion-button collapsed rounded-4"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#faq6">
+                           <span class="faq-title">
+                           <i class="bi bi-folder"></i>
+                           How do I see previous orders?
+                           </span>
+                           </button>
+                        </h2>
+                        <div id="faq6"
+                           class="accordion-collapse collapse"
+                           data-bs-parent="#faqRight">
+                           <div class="accordion-body text-muted">
+                              Lorem ipsum...
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- CTA -->
+            <div class="text-center mt-5">
+               <p class="mb-3">I want to start a new project.</p>
+               <div class="d-flex justify-content-center gap-4">
+                  <button class="btn btn-primary px-4 py-3">
+                  Buy now →
+                  </button>
+                  <button class="btn text-decoration-none">
+                  Learn more
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="footer-section pt-5">
+         <div class="container">
+            <!-- TOP CTA ROW -->
+            <div class="d-flex flex-column flex-lg-row 
+               justify-content-between 
+               align-items-start align-items-lg-center 
+               mb-5">
+               <div class="mb-4 mb-lg-0">
+                  <h4 class="text-white">
+                     Brilliant solutions for your ideas
+                  </h4>
+                  <p class="text-white-50 mb-0">
+                     Modern looking websites.
+                  </p>
+               </div>
+               <div class="d-flex gap-4">
+                  <a href="#" class="btn btn-light px-4 py-2 ">
+                  <i class="bi bi-phone custom-icon-color"></i>
+                  Documentation
+                  </a>
+                  <a href="#" class="btn btn-primary lg-px-4 py-2">
+                  Purchase now
+                  </a>
+               </div>
+            </div>
+            <hr class="border-secondary mb-5">
+            <!-- FOOTER GRID -->
+            <div class="row gy-5">
+               <div class="col-lg-5">
+                  <img src="icons/odoo-white.svg" 
+                     alt="Odoo"
+                     class="footer-logo mb-3">
+                  <p class="text-white-50">
+                     Odoo attempts to bring the best development experience to designers 
+                     and developers by offering the tools needed for having a quick and 
+                     solid start in most web projects.
+                  </p>
+                  <div class="d-flex gap-3 mt-3">
+                     <a href="#" class="text-white-50"><i class="bi bi-globe"></i></a>
+                     <a href="#" class="text-white-50"><i class="bi bi-github"></i></a>
+                     <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+                     <a href="#" class="text-white-50"><i class="bi bi-facebook"></i></a>
+                  </div>
+               </div>
+               <!-- ACCOUNT -->
+               <div class="col-6 col-lg-2">
+                  <h6 class="text-white mb-3">Account</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#" class="footer-link">Profile</a></li>
+                     <li><a href="#" class="footer-link">Settings</a></li>
+                     <li><a href="#" class="footer-link">Billing</a></li>
+                     <li><a href="#" class="footer-link">Notifications</a></li>
+                  </ul>
+               </div>
+               <!-- ABOUT -->
+               <div class="col-6 col-lg-2">
+                  <h6 class="text-white mb-3">About</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#" class="footer-link">Services</a></li>
+                     <li><a href="#" class="footer-link">Pricing</a></li>
+                     <li><a href="#" class="footer-link">Contact</a></li>
+                     <li><a href="#" class="footer-link">Careers</a></li>
+                  </ul>
+               </div>
+               <!-- COMPANY -->
+               <div class="col-6 col-lg-2">
+                  <h6 class="text-white mb-3">Company</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#" class="footer-link">Community</a></li>
+                     <li><a href="#" class="footer-link">Help center</a></li>
+                     <li><a href="#" class="footer-link">Support</a></li>
+                  </ul>
+               </div>
+            </div>
+            <hr class="border-secondary mb-5">
+            <!-- BOTTOM ROW -->
+            <div class="d-flex flex-column flex-lg-row 
+               justify-content-between 
+               align-items-center ">
+               <p class="text-white-50 mb-3 mb-lg-0">
+                  © Odoo. All rights reserved
+               </p>
+               <div class="d-flex gap-4">
+                  <a href="#" class="footer-link">Terms</a>
+                  <a href="#" class="footer-link">Privacy</a>
+                  <a href="#" class="footer-link">Cookies</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>

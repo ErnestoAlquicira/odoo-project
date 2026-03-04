@@ -1,0 +1,387 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+	background-color: #f8f9fa;
+	padding-top: 50px;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+	font-weight: 600 !important;
+}
+
+h2,
+h3 {
+	font-size: 1.5em;
+	font-weight: 600;
+	line-height: 1.6;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.8em;
+}
+section{
+scroll-margin-top:80px;
+}
+.desk {
+	display: block;
+}
+
+.mob {
+	display: none;
+}
+
+.hero-section {
+	background: linear-gradient(135deg, #038aff, rgb(8, 118, 227));
+	min-height: 85vh;
+	display: flex;
+	align-items: center;
+}
+
+.custom-navbar {
+	background: #038aff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.navbar-brand img{
+	height:24px;
+}
+.navbar-nav .nav-link{
+	font-weight:500;
+}
+.navbar-dark .nav-link {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .nav-link:hover {
+	color: white;
+}
+
+.faq-title {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-weight: 500;
+}
+
+.faq-title i {
+	font-size: 18px;
+	color: #6c757d;
+}
+
+.text-white-75 {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.feature-icon-circle {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.custom-icon-color {
+	color: #038aff;
+}
+
+.card-offset {
+	margin-top: 20px;
+}
+
+.profile-card img {
+	height: 320px;
+	object-fit: cover;
+}
+
+.feature-card-small {
+	max-width: 420px;
+}
+
+.hero-angle {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: #f8f9fa;
+	transform: skewY(-2deg);
+}
+
+.card-manager {
+	border-bottom-right-radius: 60px;
+}
+
+.bank-card {
+	background: linear-gradient(135deg, #2b0f54, #3a1b7a);
+	overflow: hidden;
+}
+.mc-circle {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+}
+
+.mc-circle+.mc-circle {
+	margin-left: -8px;
+}
+
+.bank-card::after {
+	content: "";
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	width: 200px;
+	height: 200px;
+	background: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+	background-size: 10px 10px;
+	opacity: 0.3;
+	transform: rotate(20deg);
+}
+
+.product-module {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.trusted-logos {
+	opacity: 0.9;
+}
+
+.brand-logos {
+	align-items: center;
+}
+
+.brand-logo {
+	height: 18px;
+	filter: brightness(0) invert(1);
+	opacity: 0.7;
+	transition: 0.2s ease;
+}
+
+.brand-logo:hover {
+	opacity: 1;
+}
+
+.badge-tools {
+	background-color: #fbbf24;
+	color: white;
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.6rem 1rem;
+	border-radius: 50px;
+	letter-spacing: 0.3px;
+}
+
+.badge-features {
+	background-color: #5bcaa7;
+	color: white;
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.6rem 1rem;
+	border-radius: 50px;
+	letter-spacing: 0.3px;
+}
+
+.badge-technology {
+	background-color: #038aff;
+	color: white;
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.6rem 1rem;
+	border-radius: 50px;
+	letter-spacing: 0.3px;
+}
+
+.badge-install {
+	background-color: #febd3d;
+	color: white;
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.6rem 1rem;
+	border-radius: 50px;
+	letter-spacing: 0.3px;
+}
+
+.badge-awards {
+	background-color: #038aff;
+	color: white;
+	font-size: 0.85rem;
+	font-weight: 500;
+	padding: 0.6rem 1rem;
+	border-radius: 50px;
+	letter-spacing: 0.3px;
+}
+
+.text-success {
+	color: #5bcaa7 !important;
+}
+
+.text-success-content {
+	color: #5bcaa7;
+	font-weight: 500;
+}
+
+.video-item {
+	cursor: pointer;
+}
+
+.video-item.active {
+	font-weight: 600;
+}
+
+.object-fit-cover {
+	object-fit: cover;
+}
+
+.video-layer {
+	z-index: 1;
+  width: 43%;
+}
+.progress{
+  height:4px;
+}
+.position-relative>.btn {
+	z-index: 2;
+}
+
+#projectVideo {
+	position: relative;
+	z-index: 10;
+}
+
+.cta-block {
+	background: #1e1b4b;
+	border-radius: 0 60px;
+}
+
+.award-card {
+	transition: all 0.25s ease;
+	cursor: pointer;
+}
+.award-card img{
+	height:28px;
+}
+
+.award-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.award-card:active {
+  transform: scale(0.97);
+}
+
+.accordion-button {
+	background: white;
+}
+
+.accordion-button:not(.collapsed) {
+	background: white;
+	box-shadow: none;
+}
+
+.accordion-item {
+	background: transparent;
+}
+
+.footer-section {
+	background: #1e1b4b;
+	color: white;
+	padding-bottom: 60px;
+}
+
+.footer-link {
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+	display: block;
+	margin-bottom: 8px;
+	transition: 0.2s ease;
+}
+
+.footer-link:hover {
+	color: white;
+}
+
+.footer-logo {
+	height: 24px;
+	vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+	.video-card {
+		position: absolute;
+		top: -30px;
+		right: -40px;
+		width: 70%;
+	}
+	#tech-section .row>div:nth-child(2) {
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+  	.desk {
+		display: none !important;
+	}
+	.mob {
+		display: inline-block !important;
+	}
+	.feature-card-small {
+	max-width: 100%;
+	}
+
+	.badge-technology {
+		margin-top: 20px;
+	}
+
+	.brand-logos {
+		justify-content: center;
+	}
+
+	.trusted-logos {
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px) {
+	.award-card {
+		margin: 0 2rem !important;
+	}
+
+	.websiteui-card {
+		margin: 0 2rem !important;
+	}
+
+	.components-card {
+		margin: 2rem 2rem !important;
+	}
+
+	.award-card img {
+		margin-bottom: 1rem;
+	}
+
+	.award-card p {
+		margin-bottom: .75rem;
+	}
+
+	.award-card small {
+		display: block;
+		margin-top: .25rem;
+	}
+
+}
+
+@media (max-width: 475px) {
+   .feature-card-small {
+  max-width: 100%!important;
+}
+	.desk {
+		display: none !important;
+	}
+	.mob {
+		display: inline-block !important;
+	}
+}
